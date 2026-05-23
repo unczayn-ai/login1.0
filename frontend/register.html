@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="login-card">
+            <div class="theme-toggle">
+                <button id="themeBtn">🌙</button>
+            </div>
+            <h1>CREATE ACCOUNT</h1>
+            <p class="subtitle">
+                Please register a new account.
+            </p>
+
+            <!-- Register Form -->
+            <form id="registerForm">
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    
+                    <div class="password-wrapper">   
+                        <input type="password" id="password" placeholder="Enter your password">
+                        <span id="togglePassword">👁️</span>
+                    </div>
+
+                </div>
+
+                <div class="options">
+                    <div class="remember">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#">Forget Password?</a>
+                </div>
+
+                <button type="submit" id="loginBtn">Register</button>
+                <p id="message"></p>
+
+            </form>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>Already have an account? <a href="index.html">Sign In</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
