@@ -47,7 +47,7 @@ if (loginForm) {
         loginBtn.disabled = true;
         loginBtn.textContent = "loading...";
     
-        fetch("http://localhost:5000/login", {
+        fetch("https://login-auth-project-r3pm.onrender.com/login", {
             
             method: "POST",
             headers: {"Content-Type": "application/json"},
@@ -132,7 +132,7 @@ if (registerForm) {
         loginBtn.disabled = true;
         loginBtn.textContent = "loading...";
 
-        fetch("http://localhost:5000/register", {
+        fetch("https://login-auth-project-r3pm.onrender.com/register", {
            
             method: "POST",
             headers: {"Content-Type": "application/json"},
